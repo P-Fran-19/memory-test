@@ -18,18 +18,8 @@ body {
     margin-top: 20px;
 }
 
-button {
-    padding: 10px 20px;
-    margin: 5px;
-    font-size: 16px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s, box-shadow 0.3s;
-}
+button { 
+    padding: 10px 40px; margin: 5px; font-size: 16px; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); transition: background-color 0.3s, box-shadow 0.3s; width: 120px; }
 
 button:hover {
     background-color: #e8ea77;
@@ -111,3 +101,5 @@ button:hover {
     background-color: transparent; /* Para que la imagen sea visible */
     border: none; /* Opcional: elimina el borde si no se necesita */
 }
+
+#status p { margin: 5px; font-size: 18px; display: flex; align-items: center; justify-content: center; }
