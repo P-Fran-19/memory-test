@@ -1,0 +1,113 @@
+/* Fondo para el cuerpo de la página */
+body {
+    background: linear-gradient(135deg, rgb(224, 151, 24), rgb(227, 224, 221));
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #fff;
+}
+
+/* Controles */
+#controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #e8ea77;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+#status {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#status p {
+    margin: 5px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+/* Estilo para el tablero */
+#board {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+/* Cartas */
+.card {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 30px;
+    background-color: #f0f76b;
+    color: #000;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.card.flipped {
+    background-color: #fff;
+    color: #000;
+    transform: rotateY(180deg);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card.hidden {
+    color: transparent;
+}
+
+.card.matched {
+    background-color: #28a745;
+    color: #fff;
+    cursor: default;
+    pointer-events: none;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Imagen de fondo específica para cartas ocultas */
+.card.hidden {
+    background-image: url('background.jpg'); /* Reemplaza con la ruta de tu imagen */
+    background-color: transparent; /* Para que la imagen sea visible */
+    border: none; /* Opcional: elimina el borde si no se necesita */
+}
